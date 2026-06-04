@@ -1,0 +1,4 @@
+[submodule "code/eyetrackprep"]
+	path = code/eyetrackprep
+	url = git@github.com:courtois-neuromod/eyetrackprep.git
+	datalad-url = git@github.com:courtois-neuromod/eyetrackprep.git
