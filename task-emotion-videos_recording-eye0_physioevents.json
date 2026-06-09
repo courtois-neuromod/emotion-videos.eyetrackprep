@@ -1,0 +1,45 @@
+{
+    "Columns": [
+        "onset",
+        "median_distance_x",
+        "median_distance_y",
+        "duration",
+        "pupil_count",
+        "stdev_distance_x",
+        "stdev_distance_y"
+    ],
+    "Description": "Known periods of fixations used to correct drift in gaze mapping.",
+    "OnsetSource": "timestamp",
+    "onset": {
+        "Description": "Onset of the reference fixation period.",
+        "Units": "seconds"
+    },
+    "median_distance_x": {
+        "LongName": "Median distance to center (x)",
+        "Description": "Median gaze distance in x to the central fixation marker during the reference fixation period, normalized as a proportion of the screen width. Bound = [-0.5, 0.5], where -0.5 = left edge of the screen.",
+        "Units": "arbitrary"
+    },
+    "median_distance_y": {
+        "LongName": "Median distance to center (y)",
+        "Description": "Median gaze distance in y to the central fixation marker during the reference fixation period, normalized as a proportion of the screen height. Bound = [-0.5, 0.5], where -0.5 = bottom edge of the screen.",
+        "Units": "arbitrary"
+    },
+    "duration": {
+        "Description": "Difference between the timestamps of the last and the first high confidence gaze sampled during the reference fixation period.",
+        "Units": "seconds"
+    },
+    "pupil_count": {
+        "Description": "Number of gaze points derived from pupils detected with above-threshold confidence used to calculate median gaze coordinates during the reference fixation period.",
+        "Units": "count"
+    },
+    "stdev_distance_x": {
+        "LongName": "Standard deviation of distance to center (x)",
+        "Description": "Standard deviation of gaze distance in x to the central fixation marker during the reference fixation period, normalized as a proportion of the screen width. Bound = [-0.5, 0.5], where -0.5 = left edge of the screen.",
+        "Units": "arbitrary"
+    },
+    "stdev_distance_y": {
+        "LongName": "Standard deviation of distance to center (y)",
+        "Description": "Standard deviation of gaze distance in y to the central fixation marker during the reference fixation period, normalized as a proportion of the screen height. Bound = [-0.5, 0.5], where -0.5 = bottom edge of the screen.",
+        "Units": "arbitrary"
+    }
+}
