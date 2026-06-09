@@ -1,0 +1,22 @@
+{
+    "Name": "Eyetracking sub-dataset for the emotion-videos task of the Courtois-Neuromod project, processed with the cneuromod.eyetrackprep gaze processing workflow.",
+    "BIDSVersion": "1.11.1",
+    "DatasetType": "derivative",
+    "SourceDatasets": {
+        "name": "Cneuromod emotion-videos dataset (sensitive raw data with restricted access)."
+    },
+    "License": "CC0",
+    "ReferencesAndLinks": [
+        "https://docs.cneuromod.ca/"
+    ],
+    "Authors": [
+        "Lune Bellec",
+        "Julie Boyle",
+        "Basile Pinsard",
+        "Marie St-Laurent",
+        "Marie-Eve Picard"
+    ],
+    "Funding": [
+        "Courtois Foundation"
+    ]
+}
