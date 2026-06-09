@@ -1,39 +1,42 @@
 {
-    "DriftCorrection_QualityCheck": "Pass",
+    "DriftCorrection_QualityCheck": {
+        "Value": "Pass",
+        "Description": "Whether drift-corrected gaze passed manual inspection (pass/fail)."
+    },
     "StartTime": {
         "Value": 0.0005622514872811735,
         "Description": "First sampled pupil's time stamp from run onset."
     },
     "DriftCorrectionMethod": {
-        "value": "Latest Fixation",
+        "Value": "Latest Fixation",
         "Description": "Method used to correct run gaze drift."
     },
     "PupilConfidenceThreshold": {
-        "value": 0.85,
+        "Value": 0.85,
         "Description": "Pupil detection confidence threshold used to filter out unreliable gaze captured throughout fixation."
     },
     "MinProportionGazePerFix": {
-        "value": 0.2,
+        "Value": 0.2,
         "Description": "Minimum proportion of high-confidence gaze captured throughout fixation, used as a cut-off to filter out unreliable fixations."
     },
     "MaxGazeFixVariability": {
-        "value": 0.16,
+        "Value": 0.16,
         "Description": "Maximal variability in position between gaze captured throughout fixation. Composite metric estimated from stdev in x and y used as a cut-off to filter out unreliable fixations."
     },
     "HighConfidenceGazeCount": {
-        "value": 98758,
+        "Value": 98758,
         "Description": "Total number of gaze derived from pupils captured above the PupilConfidenceThreshold throughout the entire run."
     },
     "TotalGazeCount": {
-        "value": 125747,
+        "Value": 125747,
         "Description": "Total number of gaze points captured throughout the entire run."
     },
     "HighConfidenceFixationCount": {
-        "value": 56,
+        "Value": 56,
         "Description": "Total number of reliable fixations used to correct drift throughout the run. Reliable fixations met a minimum number of high-confidence gaze (MinProportionGazePerFix) and a maximal amount of variability in gaze position (MaxGazeFixVariability)."
     },
     "TotalFixationCount": {
-        "value": 58,
+        "Value": 58,
         "Description": "Total number of fixation periods throughout the run."
     }
 }
