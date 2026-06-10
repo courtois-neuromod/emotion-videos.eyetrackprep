@@ -1,0 +1,38 @@
+{
+    "DriftCorrection_QualityCheck": {
+        "Value": "Pass",
+        "Description": "Whether drift-corrected gaze passed manual inspection (pass/fail)."
+    },
+    "DriftCorrectionMethod": {
+        "Value": "Latest Fixation",
+        "Description": "Method used to correct run gaze drift."
+    },
+    "PupilConfidenceThreshold": {
+        "Value": 0.9,
+        "Description": "Pupil detection confidence threshold used to filter out unreliable gaze captured throughout fixation."
+    },
+    "MinProportionGazePerFix": {
+        "Value": 0.2,
+        "Description": "Minimum proportion of high-confidence gaze captured throughout fixation, used as a cut-off to filter out unreliable fixations."
+    },
+    "MaxGazeFixVariability": {
+        "Value": 0.16,
+        "Description": "Maximal variability in position between gaze captured throughout fixation. Composite metric estimated from stdev in x and y used as a cut-off to filter out unreliable fixations."
+    },
+    "HighConfidenceGazeCount": {
+        "Value": 54992,
+        "Description": "Total number of gaze derived from pupils captured above the PupilConfidenceThreshold throughout the entire run."
+    },
+    "TotalGazeCount": {
+        "Value": 121579,
+        "Description": "Total number of gaze points captured throughout the entire run."
+    },
+    "HighConfidenceFixationCount": {
+        "Value": 46,
+        "Description": "Total number of reliable fixations used to correct drift throughout the run. Reliable fixations met a minimum number of high-confidence gaze (MinProportionGazePerFix) and a maximal amount of variability in gaze position (MaxGazeFixVariability)."
+    },
+    "TotalFixationCount": {
+        "Value": 56,
+        "Description": "Total number of fixation periods throughout the run."
+    }
+}
