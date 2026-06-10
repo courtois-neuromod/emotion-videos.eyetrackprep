@@ -1,0 +1,4 @@
+# QC files list
+code/QC_gaze/*
+
+code/emotionsvideos_relabelruns.tsv
