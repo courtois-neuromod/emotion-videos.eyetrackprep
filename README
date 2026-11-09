@@ -5,3 +5,25 @@
 The [Courtois project on Neural Modelling (Courtois NeuroMod)](https://www.cneuromod.ca/) is assembling an extensive dataset of individual human brain activity, physiological and behavioural data.
 
 The current sub-dataset contains drift-corrected gaze coordinates and metrics of pupil dilation to complement the BOLD response for the emotion-videos dataset.
+
+### Drift-corrected gaze examples
+
+This section provides some examples of uncorrected vs corrected gaze projected onto the stimuli. The raw gaze data (`emotion-videos`) was preprocessed using [`eyetrackprep`](https://zenodo.org/records/23423991). The stimuli used are coming from the database collected by [Cowen & Keltner (2017)](https://doi.org/10.1073/pnas.1702247114).
+
+In the video below, each point represents the gaze from one participant. If there are less than five points, it means that the drift correction procedure failed for the run containing the stimulus due to poor data quality. The information regarding whether or not the drift correction succeeded or not can be find in the `*desc-drifcorr_qcmetrics.json` files under the `"DriftCorrection_QualityCheck"` key. 
+
+The code to project the gaze on the videos is available in the `qc_gaze.ipynb` notebook in the `emotion-videos.datapaper` submodule.
+
+| Uncorrected | Corrected |
+| -- | -- |
+| ![stim-1965_desc-wGazeUncorr](figures/task-emotion_stim-1965_desc-wGazeUncorr.gif) | ![stim-1965_desc-wGazeCorr](figures/task-emotion_stim-1965_desc-wGazeCorr.gif) |
+
+Example of stimuli for which the drift correction failed for at least one subject:
+
+| Uncorrected | Corrected |
+| -- | -- |
+| ![stim-0004_desc-wGazeUncorr](figures/task-emotion_stim-0004_desc-wGazeUncorr.gif) | ![stim-0004_desc-wGazeCorr](figures/task-emotion_stim-0004_desc-wGazeCorr.gif) |
+
+| Uncorrected | Corrected |
+| -- | -- |
+| ![stim-0605_desc-wGazeUncorr](figures/task-emotion_stim-0605_desc-wGazeUncorr.gif) | ![stim-0605_desc-wGazeCorr](figures/task-emotion_stim-0605_desc-wGazeCorr.gif) |
